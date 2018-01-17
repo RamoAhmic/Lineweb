@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body {
+    background-color: rgba(233, 223, 223, 0.514);
+    
+}
+.wrapp {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    
+}
+.header {
+    width: 100%;
+    background-color: rgb(42, 124, 45);
+    
+}
+.header .logo {
+    padding: 10px;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+    margin-top: 10px;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: rgb(42, 124, 45);}
+
+ul.topnav li.right {float: right;}
+
+.left {
+    width: 60%;
+    float: left;
+    
+}
+.rightcolumn {
+    width: 40%;
+    float: left;
+    padding-left: 20px;
+    
+}
+.left img {
+    width: 100%;
+    opacity: 0.8;
+}
+.card {
+    padding: 5px;
+}
+.card p {
+    text-align: justify;
+}
+.rightcolumn h2 {
+    background-color: rgb(42, 124, 45);
+    text-align: center;
+    color: rgb(194, 233, 233);
+    padding: 5px;
+}
+.rightcolumn img {
+    width: 100%;
+}
+.footer {
+    background-color: #333;
+    padding: 10px;
+}
+.footer p {
+    color: #FFFFFF;
+    font-size: 1.0rem;
+   text-align: center;
+}
+
+
+.row:before, .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 960px){
+    .wrapp {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+    .left {
+        float: none;
+        width: 100%;
+    }
+    .rightcolumn {
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .wrapp {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+    .left {
+        float: none;
+        width: 100%;
+    }
+    .rightcolumn {
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+
